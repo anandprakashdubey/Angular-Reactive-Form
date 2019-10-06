@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <a class="navbar-brand">{{pageTitle}}</a>
+    <ul class="nav nav-pills">
+        <li><a [routerLink]="['/welcome']" class="nav-link">Home</a></li>
+        <li><a [routerLink]="['/products']" class="nav-link">Product List</a></li>
+        <li><a [routerLink]="['/products/0/edit']" class="nav-link">Add Product</a></li>
+        <li><a [routerLink]="['/formBasedSignUp']" class="nav-link">Form Based SignUp</a></li>
+        <li><a [routerLink]="['/reactiveFormBasedSignUp']" class="nav-link">Reactive Form SignUp</a></li>
+        
+    </ul>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
